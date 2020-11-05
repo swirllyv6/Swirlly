@@ -1,0 +1,38 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+.home{
+    background: url('src/assets/images/Group-38.png') no-repeat;
+    height: 110vh;
+    margin-bottom: 5%;
+}
+
+.home-content{
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 37%;  
+}
+
+
+p i{
+    animation: down-arrow 0.6s infinite ease-in-out;
+}
+
+@keyframes down-arrow{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(4px);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    h2 {
+      font-size: 3rem;
+    }
+    p {
+        font-size: 2rem !important;
+    }
+}

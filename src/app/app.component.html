@@ -1,0 +1,62 @@
+  <nav class="navbar sticky-top navbar-light bg-white m-0 navbar-expand-md" id="navbar">
+    <a class="navbar-brand m-0 p-0" href="#" id="logo"><img class="image-fluid" src="assets/images/Swirlly.png" alt=""></a>
+    <button class="navbar-toggler float-right ml-auto border-0" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="container1" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <!-- <div class="bar2"></div> -->
+        <div class="bar3"></div>
+      </div>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto float-right">
+        <li class="nav-item">
+          <button class="nav-link border-0 bg-white mx-3" (click)="scroll(home)" href="#">Home</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link border-0 bg-white mx-3" (click)="scroll(about)" href="#">About</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link border-0 bg-white mx-3" (click)="scroll(methodology)" href="#">Methodology</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link border-0 bg-white mx-3" (click)="scroll(services)" href="#">Services</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link border-0 bg-white mx-3" (click)="scroll(portfolio)" href="#">Portfolio</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link border-0 bg-white mx-3" (click)="scroll(team)" href="#">Team</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link border-0 bg-white mx-3" (click)="scroll(contact)" href="#">Contact</button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div #home>
+    <app-home></app-home>
+  </div>
+  <div #about>
+    <app-about></app-about>
+  </div>
+  <div #methodology>
+    <app-methodology></app-methodology>
+  </div>
+  <div #services>
+    <app-services></app-services>
+  </div>
+  <div #portfolio>
+    <app-portfolio></app-portfolio>
+  </div>
+  <div #team>
+    <app-team></app-team>
+  </div>
+  <div #contact>
+    <app-contact-us></app-contact-us>
+  </div>
+
+  <!-- fixed contact us -->
+  <div class="contact-btn">
+    <button class="btn btn-primary text-white px-4 py-3" (click)="scroll(contact)"><i class="fas fa-phone-alt"></i>&nbsp; Contact Us</button>
+  </div>
