@@ -40,7 +40,21 @@ img{
     }
   }
 
+
 @media screen and (max-width: 768px) {
+    .mobile-view {
+      display: none;
+    }
+    .tablet-img img{
+        height: 50px;
+        width: auto;
+    }
+    .mbl-center p,h4{
+        padding: 0 10px;
+    }
+  }
+
+@media screen and (max-width: 600px) {
     .mobile-view {
       display: none;
     }

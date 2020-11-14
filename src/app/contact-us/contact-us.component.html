@@ -10,15 +10,15 @@
     <div class="col-md-6 container">
       <div class=" rounded pt-5">
         <div class="d-flex justify-content-center">
-          <form class="mx-auto" action="">
+          <form class="mx-auto" [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
             <label for="Name">Name</label>
-            <input type="text" class="form-control" size="40" placeholder="Name"><br>
+            <input type="text" class="form-control" required formControlName="name" size="40" placeholder="Name"><br>
             <label for="Email">Email</label>
-            <input type="email" class="form-control" placeholder="Email"><br>
+            <input type="email" class="form-control" required formControlName="email" placeholder="Email"><br>
             <p><label for="Message">Message</label></p>
-            <textarea name="" id="" class="rounded form-control p-2" cols="40" rows="4"
+            <textarea name="msg" formControlName="msg" required class="rounded form-control p-2" cols="40" rows="4"
               placeholder="Your Message"></textarea><br><br>
-            <div class="text-center"><input disabled type="submit" value="Send message" class="btn disabled btn-danger py-3 px-5"></div>
+            <div class="text-center"><input [disabled]="myForm.invalid == true"  type="submit" value="Send message" class="btn  btn-danger py-3 px-5"></div>
           </form>
         </div>
         <div class="row text-center mt-4 px-3">
@@ -47,9 +47,9 @@
 <!-- Footer -->
 <footer class="container-fluid" style="background: #000000;height: 30vh;">
   <div class="container mt-5 mx-auto text-center">
-    <img class="image-fluid mx-3" src="assets/images/ICONS/Footer/Group 279.png" alt="Social-Icons">
-    <img class="image-fluid mx-3" src="assets/images/ICONS/Footer/Group 280.png" alt="Social-Icons">
-    <img class="image-fluid mx-3" src="assets/images/ICONS/Footer/Group 281.png" alt="Social-Icons">
+    <a target="_blank" href="https://twitter.com/Swirlly6?s=08"><img class="image-fluid mx-3" src="assets/images/ICONS/Footer/Group 279.png" alt="Social-Icons"></a>
+    <a target="_blank" href="https://www.instagram.com/swirlly6/"><img class="image-fluid mx-3" src="assets/images/ICONS/Footer/Group 280.png" alt="Social-Icons"></a>
+    <a target="_blank" href="https://github.com/swirllyv6"><img class="image-fluid mx-3" src="assets/images/ICONS/Footer/Group 281.png" alt="Social-Icons"></a>
   </div>
   <p class="text-center mt-4 text-white">&copy;2020 All Rights Reserved Terms of Use and Privacy Policy</p>
 </footer>

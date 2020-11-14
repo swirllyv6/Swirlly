@@ -100,6 +100,12 @@
     x.classList.toggle("change");
   }
 
+  // navbarCollpase
+  $(document).ready(function(){
+    $('.nav-link').on('click',function(){
+      $('.navbar-collapse').collapse('hide');
+    })
+  })
   // feedback text
   $(".feedbackText").click(function(){
   $(".displayText").show();

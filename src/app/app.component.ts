@@ -11,5 +11,9 @@ export class AppComponent {
   scroll( el: HTMLElement) {
     el.scrollIntoView();
   }
+
+  scrollToTop() {
+    window.scroll(0, 0);
+  }
 }
 

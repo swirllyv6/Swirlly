@@ -42,8 +42,14 @@ h1{
   background-size: 100% 400px;
 }
 
-
 @media screen and (max-width: 768px) {
+  .mobile-img {
+    background-size: 1357px 720px !important;
+    height: 70vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
   .mobile-img {
     background-size: 1457px 820px !important;
     height: 152vh !important;

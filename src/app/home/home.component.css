@@ -11,7 +11,7 @@
     color: white;
     text-align: center;
     position: relative;
-    top: 37%;  
+    top: 37%;
 }
 
 
@@ -34,5 +34,10 @@ p i{
     }
     p {
         font-size: 2rem !important;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .home{
+        height: 70vh;
     }
 }

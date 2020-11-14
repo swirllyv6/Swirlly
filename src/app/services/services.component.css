@@ -69,8 +69,10 @@ i {
     text-align: center !important;
     margin: auto !important;
   }
-
-  .col-md-4 .mob-img {
+  .col-md-8{
+    margin: auto;
+  }
+  .col-md-4 {
     display: none;
   }
 }

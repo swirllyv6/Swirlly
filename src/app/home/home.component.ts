@@ -15,4 +15,8 @@ export class HomeComponent implements OnInit {
     el.scrollIntoView();
   }
 
+  scrollToAbout() {
+    window.scroll(0,700);
+  }
+
 }

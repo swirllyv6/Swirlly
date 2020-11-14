@@ -12,4 +12,8 @@ export class AboutComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  scrollToAbout() {
+    window.scroll(0,700);
+  }
+
 }

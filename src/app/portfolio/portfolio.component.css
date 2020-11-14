@@ -110,16 +110,27 @@ div .name {
 }
 
 @media screen and (max-width: 768px) {
+  .tablet-center .col-md-4{
+    margin: auto;
+  }
+  .flip-box-back p{
+    font-size: 8px;
+    width: auto;
+  }
+  .flip-box-back a{
+    padding: 4px 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
   .flip-box {
     margin-bottom: 10% !important;
     margin-left: 3%;
     margin-right: 3%;
   }
-
   .flip-box-back a {
     margin-top: 5%;
   }
-
   .mbl-margin {
     margin-bottom: 10%;
   }

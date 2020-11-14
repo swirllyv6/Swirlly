@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TeamComponent implements OnInit {
 
+  siteVisitors : number = Math.floor(1000*Math.random()) + 1;
   constructor() { }
-
+  
   ngOnInit(): void {
+
+    this.siteVisitors++;
   }
 
 }
